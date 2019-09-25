@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
     }
 
     // TODO: Step 1 -> Create "AnimalAdapter" in adapter folder, it will take a list of Animals [List<Animal>]

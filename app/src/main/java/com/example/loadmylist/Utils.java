@@ -39,12 +39,18 @@ public class Utils {
         animals.add(new Animal("Chris", "Centaur", 4, true, getRandomDate()));
         return animals;
     }
+
     private static Date getRandomDate() {
         int day = new Random().nextInt((31 - 1) + 1) + 1;
         int month = new Random().nextInt((12 - 1) + 1) + 1;
         int year = new Random().nextInt((2019 - 1900) + 1) + 1900;
+
+
+
+
         Date date = new Date(System.currentTimeMillis());
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy", Locale.US);
+
         try {
             date = sdf.parse(day + "/" + month + "/" + year);
         } catch (ParseException e) {
@@ -52,4 +58,6 @@ public class Utils {
         }
         return date;
     }
+
+
 }
