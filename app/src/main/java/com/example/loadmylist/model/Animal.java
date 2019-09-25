@@ -2,7 +2,7 @@ package com.example.loadmylist.model;
 
 import java.util.Date;
 
-public class Animal {
+ public class Animal {
     private String name;
     private String type;
     private int legCount;
